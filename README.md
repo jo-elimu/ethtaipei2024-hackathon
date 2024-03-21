@@ -19,7 +19,7 @@
 - A DAO member can hold multiple roles
 
 **Role Levels**
-- A DAO member's role can be on level 1-10
+- A DAO member's role level can be rated with a value from 1 to 10
 
 ---
 
