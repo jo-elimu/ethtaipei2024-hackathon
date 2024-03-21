@@ -30,6 +30,8 @@ https://taikai.network/ethtaipei/hackathons/hackathon-2024/projects/cltxxre4v0dx
 
 ### Hackathon Day 3
 
+...
+
 ---
 
 ## Technicality
