@@ -1,8 +1,8 @@
-# Radical Roles (ETHTaipei 2024)
+# Radical Transparency
 
-> **Radical Roles** - A tool for DAOs to create roles (and role levels). Similar to Ray Dalio's [Radical Transparency](https://www.youtube.com/watch?v=3kUQlAUoDPw#t=14m15s) system, but adapted to a Web3 world.
+> A tool for DAOs to create roles (and role levels). Similar to Ray Dalio's [Radical Transparency](https://www.youtube.com/watch?v=3kUQlAUoDPw#t=14m15s) system, but adapted to a Web3 world.
 
-[TAIKAI hackathon project](https://taikai.network/ethtaipei/hackathons/hackathon-2024/projects/cltxxre4v0dxrwc01dvzpubvt)
+[ETHTaipei 2024 hackathon project](https://taikai.network/ethtaipei/hackathons/hackathon-2024/projects/cltxxre4v0dxrwc01dvzpubvt)
 
 ---
 
