@@ -4,6 +4,8 @@
 
 [ETHTaipei 2024 hackathon project](https://taikai.network/ethtaipei/hackathons/hackathon-2024/projects/cltxxre4v0dxrwc01dvzpubvt)
 
+![](https://taikai.azureedge.net/nCDM8OtyC2WZ5YH-WlKvrr9k5i6XfaYOauEhsQsIS5Y/rs:fit:1920:0:0/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3RhaWthaS1zdG9yYWdlL2ltYWdlcy9hMWE3NTI1MC1lNWI2LTExZWUtYjcyZi1lZGQxNmZlNjM1MWNTY3JlZW5zaG90IDIwMjQtMDMtMTkgMTM0OTE1LnBuZw)
+
 ---
 
 ## Planned Functionalities/Features
