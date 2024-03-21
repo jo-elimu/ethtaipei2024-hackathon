@@ -1,6 +1,6 @@
 # Radical DAO Transparency
 
-> A tool for DAOs to create roles (and role levels). Similar to Ray Dalio's [Radical Transparency](https://www.youtube.com/watch?v=3kUQlAUoDPw#t=13m10s) system, but adapted to a Web3 world.
+> A tool for DAOs to know what their members are really like. Similar to Ray Dalio's [Radical Transparency](https://www.youtube.com/watch?v=3kUQlAUoDPw#t=13m10s) system, but adapted to a Web3 world.
 
 [ETHTaipei 2024 hackathon project](https://taikai.network/ethtaipei/hackathons/hackathon-2024/projects/cltxxre4v0dxrwc01dvzpubvt)
 
