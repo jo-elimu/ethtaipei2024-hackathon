@@ -6,7 +6,7 @@ https://taikai.network/ethtaipei/hackathons/hackathon-2024/projects/cltxxre4v0dx
 
 ---
 
-## Functionalities
+## Planned Functionalities
 
 - A frontend app for user to interact with
 - A smart contract which stores users' rating to other users
