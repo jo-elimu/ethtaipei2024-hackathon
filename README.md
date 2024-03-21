@@ -1,2 +1,2 @@
-# ethtaipei2024-hackathon
+# Radical DAO Transparency DApp
 ETHTaipei 2024
