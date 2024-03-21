@@ -1,4 +1,4 @@
-# Radical Roles DApp
+# Radical Roles - DApp
 
 ETHTaipei 2024
 
