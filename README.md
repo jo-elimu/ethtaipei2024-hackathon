@@ -4,6 +4,8 @@ ETHTaipei 2024
 
 https://taikai.network/ethtaipei/hackathons/hackathon-2024/projects/cltxxre4v0dxrwc01dvzpubvt
 
+---
+
 ## Functionalities
 
 - A frontend app for user to interact with
@@ -13,3 +15,35 @@ https://taikai.network/ethtaipei/hackathons/hackathon-2024/projects/cltxxre4v0dx
 - ...
 - ...
 - ...
+
+---
+
+## Development Process
+
+### Hackathon Day 1
+
+...
+
+### Hackathon Day 2
+
+...
+
+### Hackathon Day 3
+
+---
+
+## Technicality
+
+...
+
+---
+
+## Utility
+
+...
+
+---
+
+## Market readiness
+
+...
