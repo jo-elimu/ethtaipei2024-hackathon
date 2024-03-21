@@ -1,5 +1,8 @@
 # Radical DAO Transparency DApp
+
 ETHTaipei 2024
+
+https://taikai.network/ethtaipei/hackathons/hackathon-2024/projects/cltxxre4v0dxrwc01dvzpubvt
 
 ## Functionalities
 
