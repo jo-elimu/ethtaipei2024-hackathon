@@ -34,18 +34,20 @@ https://taikai.network/ethtaipei/hackathons/hackathon-2024/projects/cltxxre4v0dx
 
 ---
 
-## Technicality
+## MVP
+
+### Technicality
 
 ...
 
 ---
 
-## Utility
+### Utility
 
 ...
 
 ---
 
-## Market Readiness
+### Market Readiness
 
 ...
