@@ -1,12 +1,12 @@
-# Radical Roles - DApp
+# Radical Roles (ETHTaipei 2024)
 
-ETHTaipei 2024 ([TAIKAI project](https://taikai.network/ethtaipei/hackathons/hackathon-2024/projects/cltxxre4v0dxrwc01dvzpubvt))
+> **Radical Roles** - A tool for DAOs to create roles (and role levels). Similar to Ray Dalio's [Radical Transparency](https://www.youtube.com/watch?v=3kUQlAUoDPw#t=14m15s) system, but adapted to a Web3 world.
+
+[TAIKAI hackathon project](https://taikai.network/ethtaipei/hackathons/hackathon-2024/projects/cltxxre4v0dxrwc01dvzpubvt)
 
 ---
 
 ## Planned Functionalities/Features
-
-> **Radical Roles** - A tool for DAOs to create roles (and role levels). Similar to Ray Dalio's [Radical Transparency](https://www.youtube.com/watch?v=3kUQlAUoDPw#t=14m15s) system, but adapted to a Web3 world.
 
 **DApp**
 - A frontend app for user to interact with
