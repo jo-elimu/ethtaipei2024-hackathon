@@ -29,7 +29,9 @@ https://taikai.network/ethtaipei/hackathons/hackathon-2024/projects/cltxxre4v0dx
 
 ### Hackathon Day 1
 
-...
+1. Idea [discussions](https://github.com/jo-elimu/ethtaipei2024-hackathon/discussions)
+1. [Planning](https://github.com/jo-elimu/ethtaipei2024-hackathon/tree/main?tab=readme-ov-file#planned-functionalitiesfeatures) of functionalities/features.
+1. ...
 
 ### Hackathon Day 2
 
