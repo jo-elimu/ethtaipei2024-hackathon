@@ -1,8 +1,6 @@
 # Radical Roles - DApp
 
-ETHTaipei 2024
-
-https://taikai.network/ethtaipei/hackathons/hackathon-2024/projects/cltxxre4v0dxrwc01dvzpubvt
+ETHTaipei 2024 ([TAIKAI project](https://taikai.network/ethtaipei/hackathons/hackathon-2024/projects/cltxxre4v0dxrwc01dvzpubvt))
 
 ---
 
