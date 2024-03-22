@@ -4,7 +4,7 @@ pragma solidity >=0.7.0 <0.9.0;
 
 contract Dao {
     // dao member => role => rater => rate
-    mapping(address => mapping(string => mapping(address => uint8))) public rates;
+    mapping(address => mapping(string => mapping(address => uint8))) public ratings;
 
     // all members of the dao
     address[] public members;
