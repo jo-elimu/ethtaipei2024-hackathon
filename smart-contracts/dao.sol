@@ -12,12 +12,7 @@ contract Dao {
 
     // roles of a given dao member
     string[] public roles;
-    mapping(string => bool) public hasRole;
-
-    constructor() {
-        members.push(msg.sender);
-        isMember[msg.sender] = true;
-    }
+    mapping(string => bool) public roleExist;
 
     function addMember(address member) public {
         if (isMember[member] == false) {
@@ -27,14 +22,14 @@ contract Dao {
     }
 
     function addRole(string memory role) public {
-        if (hasRole[role] == false) {
-            hasRole[role] = true;
+        if (roleExist[role] == false) {
+            roleExist[role] = true;
             roles.push(role);
         }
     }
 
-    function rateMember(address ratee, string memory role, address rater, uint8 value) public {
-        rates[ratee][role][rater] = value;
+    function rateMember(address ratee, string memory role, address rater, uint8 rating) public {
+        ratings[ratee][role][rater] = rating;
     }
 
     // Function to get the length of members array
