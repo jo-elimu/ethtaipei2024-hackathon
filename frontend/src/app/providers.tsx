@@ -12,7 +12,10 @@ import {
 } from '@rainbow-me/rainbowkit/wallets';
 import {
     scroll,
+    scrollSepolia,
     optimism,
+    optimismSepolia,
+    polygonMumbai,
     polygon,
     sepolia,
 } from 'wagmi/chains';
@@ -32,10 +35,13 @@ const config = getDefaultConfig({
         },
     ],
     chains: [
-        scroll,
-        polygon,
         sepolia,
+        scroll,
+        scrollSepolia,
+        polygon,
+        polygonMumbai,
         optimism,
+        optimismSepolia,
         ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true' ? [sepolia] : []),
     ],
     ssr: true,
