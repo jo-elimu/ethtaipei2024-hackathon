@@ -6,6 +6,11 @@ import Image from 'next/image'
 
 export default function Home() {
   console.log('Home')
+
+  const optimismDeployment = require('../../smart-contracts/deployments/optimism-sepolia.json')
+  const orgAddress = optimismDeployment.dao_contract
+  console.log('orgAddress:', orgAddress)
+
   return (
       <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-green-200">
         <Header />
@@ -15,7 +20,7 @@ export default function Home() {
             Radical DAO Transparency 🐸
           </h1>
 
-          <Link href="/orgs/0x43A30DB2d6962c37a702E869FbD15cFc4f86f621" className="hover:text-purple-600 focus:text-purple-600">
+          <Link href={`/orgs/${orgAddress}`} className="hover:text-purple-600 focus:text-purple-600">
             <Image alt='Frog DAO' src={'/transparent.png'} width={400} height={400}
                 className='mt-8 rounded-2xl' />
           </Link>

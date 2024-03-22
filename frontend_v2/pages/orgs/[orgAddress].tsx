@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import Header from "../../components/Header";
 // import Header from '@/components/Header';
 import Footer from "../../components/Footer";
+import Link from "next/link";
 
 export default function Organization() {
   console.log('Organization')
@@ -21,9 +22,9 @@ export default function Organization() {
           <h1 className="text-6xl font-bold">
             Frog DAO
           </h1>
-          <code className="mt-4">
-            0x43A30DB2d6962c37a702E869FbD15cFc4f86f621
-          </code>
+          <Link className="mt-4" href={`https://sepolia-optimism.etherscan.io/address/${orgAddress}`} target="_blank">
+            <code>{orgAddress}</code> ↗️
+          </Link>
 
           <div id="daoRoles" className="mt-4">
             <div>
