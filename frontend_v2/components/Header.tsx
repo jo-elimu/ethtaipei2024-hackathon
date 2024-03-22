@@ -1,5 +1,6 @@
 import Head from "next/head"
-
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+import '@rainbow-me/rainbowkit/styles.css';
 
 export default function Header() {
   console.log('Header')
@@ -13,7 +14,7 @@ export default function Header() {
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet"></link>
       </Head>
       <header className="flex items-center justify-center w-full h-22 border-b mb-10 p-4">
-        Header...
+        <ConnectButton />
       </header>
     </>
   )
