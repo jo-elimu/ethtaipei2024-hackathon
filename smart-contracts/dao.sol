@@ -12,7 +12,7 @@ contract Dao {
 
     // roles of a given dao member
     string[] public roles;
-    mapping(string => bool) public roleExist;
+    mapping(string => bool) public roleExists;
 
     function addMember(address member) public {
         if (isMember[member] == false) {
@@ -22,8 +22,8 @@ contract Dao {
     }
 
     function addRole(string memory role) public {
-        if (roleExist[role] == false) {
-            roleExist[role] = true;
+        if (roleExists[role] == false) {
+            roleExists[role] = true;
             roles.push(role);
         }
     }
