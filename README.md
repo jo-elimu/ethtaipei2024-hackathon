@@ -45,6 +45,8 @@
 
 ## MVP
 
+https://radical-dao-transparency.netlify.app
+
 ### Technicality
 
 ...
