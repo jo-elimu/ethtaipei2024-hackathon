@@ -42,7 +42,7 @@ contract Dao {
         return members.length;
     }
 
-    // Function to get the length of members array
+    // Function to get the length of roles array
     function getRolesCount() public view returns (uint256) {
         return roles.length;
     }
