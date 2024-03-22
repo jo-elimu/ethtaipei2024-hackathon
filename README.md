@@ -45,6 +45,8 @@
 
 ## MVP
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e1e35207-0868-4b9b-8ea1-11cad4196107/deploy-status)](https://app.netlify.com/sites/radical-dao-transparency/deploys)
+
 https://radical-dao-transparency.netlify.app
 
 ### Technicality
