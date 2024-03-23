@@ -1,6 +1,7 @@
 import { useReadContract, useReadContracts } from "wagmi";
 import { abi } from "../../smart-contracts/ignition/deployments/chain-11155420/artifacts/DaoModule#Dao.json";
 import { useIsMounted } from "../hooks/useIsMounted";
+import BlockiesSvg from "blockies-react-svg";
 
 export default function RoleMembers({ orgAddress, roleTitle }: any) {
     console.log('RoleMembers')
@@ -114,6 +115,12 @@ export function OrgMembersRatedForRole({ orgAddress, roleTitle, orgMemberAddress
                 <thead>
                     <tr>
                         <th>Member</th>
+                        <th>Average</th>
+                        {orgMemberAddressesArray.map((address, index) => (
+                            <th key={index}>
+                                <BlockiesSvg className="rounded-full h-5 w-5" address={String(address)} />
+                            </th>
+                        ))}
                     </tr>
                 </thead>
                 <tbody>
@@ -135,7 +142,13 @@ export function OrgMembersRatedForRole({ orgAddress, roleTitle, orgMemberAddress
 
                             return (
                                 <tr key={index}>
-                                    <td><code>{address}</code> --- rating: {avg}</td>
+                                    <td><code>{address.substring(0,6)}...{address.substring(38,42)}</code></td>
+                                    <td>{avg}</td>
+                                    {orgMemberAddressesArray.map((address, index) => (
+                                        <td key={index}>
+                                            <RandomRating />
+                                        </td>
+                                    ))}
                                 </tr>
                             )}
                         )
@@ -144,4 +157,74 @@ export function OrgMembersRatedForRole({ orgAddress, roleTitle, orgMemberAddress
             </table>
         </>
     )
+}
+
+export function RandomRating() {
+    console.log('RandomRating')
+
+    // Get random rating from 1-10
+    const rating = ((Math.random() * 9) + 1).toFixed()
+    console.log('rating:', rating)
+
+    if (rating == '1') {
+        return (
+            <div className={`bg-rose-400`}>
+                {rating}
+            </div>
+        )
+    } else if (rating == '2') {
+        return (
+            <div className={`bg-pink-400`}>
+                {rating}
+            </div>
+        )
+    } else if (rating == '3') {
+        return (
+            <div className={`bg-fuchsia-400`}>
+                {rating}
+            </div>
+        )
+    } else if (rating == '4') {
+        return (
+            <div className={`bg-purple-400`}>
+                {rating}
+            </div>
+        )
+    } else if (rating == '5') {
+        return (
+            <div className={`bg-violet-400`}>
+                {rating}
+            </div>
+        )
+    } else if (rating == '6') {
+        return (
+            <div className={`bg-indigo-400`}>
+                {rating}
+            </div>
+        )
+    } else if (rating == '7') {
+        return (
+            <div className={`bg-blue-400`}>
+                {rating}
+            </div>
+        )
+    } else if (rating == '8') {
+        return (
+            <div className={`bg-sky-400`}>
+                {rating}
+            </div>
+        )
+    } else if (rating == '9') {
+        return (
+            <div className={`bg-cyan-400`}>
+                {rating}
+            </div>
+        )
+    } else if (rating == '10') {
+        return (
+            <div className={`bg-teal-400`}>
+                {rating}
+            </div>
+        )
+    }
 }
