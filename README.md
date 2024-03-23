@@ -35,7 +35,9 @@
 
 ### Hackathon Day 2
 
-...
+1. Code UI
+1. Add Events to smart contract
+1. Deploy smart contract on multiple blockchains
 
 ### Hackathon Day 3
 
