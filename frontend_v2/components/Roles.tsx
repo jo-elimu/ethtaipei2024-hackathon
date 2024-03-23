@@ -39,7 +39,7 @@ export default function Roles({ orgAddress }: any) {
     return (
       <>
         {[...Array(rolesCount)].map((data, index) => (
-            <div className="mt-4 bg-white rounded-2xl p-4">
+            <div key={index} className="mt-4 bg-white rounded-2xl p-4">
                 <Role orgAddress={orgAddress} roleIndex={index} />
             </div>
         ))}
