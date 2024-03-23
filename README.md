@@ -54,6 +54,8 @@
 
 https://radical-dao-transparency.netlify.app
 
+![screencast2](https://github.com/jo-elimu/ethtaipei2024-hackathon/assets/1451036/b77de0d2-33dd-4f84-b82a-5ac7acc517c2)
+
 ### Technicality
 
 ...
