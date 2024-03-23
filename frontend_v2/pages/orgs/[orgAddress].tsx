@@ -25,7 +25,7 @@ export default function Organization() {
             <code className="bg-green-100 rounded-2xl p-2 px-4">{orgAddress} ↗️</code>
           </Link>
 
-          <div id="orgRoles" className="mt-8">
+          <div id="orgRoles" className="mt-8 bg-green-300 p-4 rounded-2xl space-y-4">
             <Roles orgAddress={orgAddress} />
           </div>
         </main>
