@@ -20,9 +20,25 @@ export default function Home() {
             Radical DAO Transparency 🐸
           </h1>
 
-          <Link href={`/orgs/${orgAddress}`} className="hover:text-purple-600 focus:text-purple-600">
-            <Image alt='Frog DAO' src={'/transparent.png'} width={400} height={400}
-                className='mt-8 rounded-2xl' />
+          <Link href={`/orgs/${orgAddress}`} className="mt-8 rounded-2xl shadow-2xl">
+            <Image alt='Frog DAO' src={'/transparent.png'} width={400} height={400} className='rounded-t-2xl' />
+            <div className='bg-white rounded-b-2xl p-4 text-4xl'>
+              Hacker DAO
+            </div>
+          </Link>
+
+          <Link href={`/orgs/${orgAddress}`} className="mt-8 rounded-2xl shadow-2xl">
+            <Image alt='Frog DAO' src={'/transparent.png'} width={400} height={400} className='rounded-t-2xl' />
+            <div className='bg-white rounded-b-2xl p-4 text-4xl'>
+              Cracker DAO
+            </div>
+          </Link>
+
+          <Link href={`/orgs/${orgAddress}`} className="mt-8 rounded-2xl shadow-2xl">
+            <Image alt='Frog DAO' src={'/transparent.png'} width={400} height={400} className='rounded-t-2xl' />
+            <div className='bg-white rounded-b-2xl p-4 text-4xl'>
+              Snacker DAO
+            </div>
           </Link>
         </main>
 
