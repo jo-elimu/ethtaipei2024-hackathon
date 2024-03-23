@@ -119,32 +119,23 @@ export function OrgMembersRatedForRole({ orgAddress, roleTitle, orgMemberAddress
                 <tbody>
                     {
                         orgMemberAddressesArray.map((address, index) => {
-                            const { data: data1, isLoading: isLoading1 } = useReadContract({
-                                abi,
-                                address: orgAddress,
-                                functionName: 'ratings',
-                                args: [address, roleTitle, orgMemberAddresses[0]], // member, role, rater
-                            })
-                            console.log('address, index, data', address, index, data1);
+                            var avg = 0;
+                            for (let index = 0; index < orgMemberAddressesArray.length; index++) {
+                                const { data, isLoading } = useReadContract({
+                                    abi,
+                                    address: orgAddress,
+                                    functionName: 'ratings',
+                                    args: [address, roleTitle, orgMemberAddresses[index]], // member, role, rater
+                                });
+                                console.log('ratee, rate, rater', address, data, orgMemberAddresses[index]);
 
-                            const { data: data2, isLoading: isLoading2 } = useReadContract({
-                                abi,
-                                address: orgAddress,
-                                functionName: 'ratings',
-                                args: [address, roleTitle, orgMemberAddresses[1]], // member, role, rater
-                            })
-                            console.log('address, index, data', address, index, data2);
-
-                            // Convert data and data2 to integers
-                            const integerData1 = parseInt(data1 as string);
-                            const integerData2 = parseInt(data2 as string);
-
-                            // Calculate average
-                            const average = (integerData1 + integerData2) / 2;
+                                avg = avg + parseInt(data as string);
+                            }
+                            avg = avg / orgMemberAddressesArray.length;
 
                             return (
                                 <tr key={index}>
-                                    <td><code>{address}</code> --- rating: {average}</td>
+                                    <td><code>{address}</code> --- rating: {avg}</td>
                                 </tr>
                             )}
                         )
