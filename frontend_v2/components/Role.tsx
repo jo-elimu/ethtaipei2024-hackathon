@@ -13,7 +13,7 @@ export default function Role({ orgAddress, roleIndex }: any) {
     })
     console.log('data:', data )
 
-    if (!useIsMounted || isLoading) {
+    if (!useIsMounted() || isLoading) {
         return (
             <>
                 Loading role...
