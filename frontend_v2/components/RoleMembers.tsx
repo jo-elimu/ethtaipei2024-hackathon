@@ -123,7 +123,7 @@ export function OrgMembersRatedForRole({ orgAddress, roleTitle, orgMemberAddress
                                 abi,
                                 address: orgAddress,
                                 functionName: 'ratings',
-                                args: [address, roleTitle, '0x7E5F4552091A69125d5DfCb7b8C2659029395Bdf'], // member, role, rater
+                                args: [address, roleTitle, '0x1aB0bE0067c4C82725dDF8456fF3031c3da08329'], // member, role, rater
                             })
                             console.log('address, index, data', address, index, data);
 
