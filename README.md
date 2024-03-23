@@ -33,9 +33,14 @@
 1. [Planning](https://github.com/jo-elimu/ethtaipei2024-hackathon/tree/main?tab=readme-ov-file#planned-functionalitiesfeatures) of functionalities/features.
 1. UX/UI sketching
 
+   <img src="https://github.com/jo-elimu/ethtaipei2024-hackathon/assets/1451036/88b2e931-f578-4284-a619-1fc2c02e15fd" width="480" />
+
+
 ### Hackathon Day 2
 
-...
+1. Code UI
+1. Add Events to smart contract
+1. Deploy smart contract on multiple blockchains
 
 ### Hackathon Day 3
 
