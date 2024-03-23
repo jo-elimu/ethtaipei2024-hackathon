@@ -13,7 +13,7 @@ export default function Roles({ orgAddress }: any) {
     })
     console.log('data:', data )
 
-    if (!useIsMounted || isLoading) {
+    if (!useIsMounted() || isLoading) {
         return (
             <>
                 Loading DAO roles...
