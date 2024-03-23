@@ -11,6 +11,8 @@ import {
   polygonMumbai,
   polygon,
   sepolia,
+  linea,
+  lineaTestnet
 } from 'wagmi/chains';
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
@@ -35,6 +37,8 @@ const config = getDefaultConfig({
     polygonMumbai,
     optimism,
     optimismSepolia,
+    linea,
+    lineaTestnet,
     ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true' ? [sepolia] : []),
   ],
   ssr: true,
