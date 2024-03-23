@@ -1,6 +1,7 @@
 import { useReadContract } from "wagmi";
 import { abi } from "../../smart-contracts/ignition/deployments/chain-11155420/artifacts/DaoModule#Dao.json";
 import { useIsMounted } from "../hooks/useIsMounted";
+import RoleMembers from "./RoleMembers";
 
 export default function Role({ orgAddress, roleIndex }: any) {
     console.log('Role')
@@ -26,7 +27,10 @@ export default function Role({ orgAddress, roleIndex }: any) {
     console.log('roleTitle:', roleTitle)
     return (
         <>
-            <h2 className="text-4xl">Role: {roleTitle}</h2>
+            <h2 className="text-4xl"><span className="text-gray-300">Role:</span> {roleTitle}</h2>
+            <div className="mt-4">
+                <RoleMembers orgAddress={orgAddress} roleTitle={roleTitle} />
+            </div>
         </>
     )
   }
