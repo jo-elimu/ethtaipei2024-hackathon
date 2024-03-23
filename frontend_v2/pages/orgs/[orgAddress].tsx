@@ -14,6 +14,8 @@ export default function Organization() {
   const orgAddress = router.query.orgAddress
   console.log('orgAddress:', orgAddress)
 
+
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-green-200">
         <Header />
@@ -23,7 +25,7 @@ export default function Organization() {
             Frog DAO
           </h1>
           <Link className="mt-4" href={`https://sepolia-optimism.etherscan.io/address/${orgAddress}`} target="_blank">
-            <code>{orgAddress}</code> ↗️
+            <code className="bg-green-100 rounded-2xl p-2 px-4">{orgAddress} ↗️</code>
           </Link>
 
           <div id="daoRoles" className="mt-4">
