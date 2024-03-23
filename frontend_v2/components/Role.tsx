@@ -22,10 +22,7 @@ export default function Role({ orgAddress, roleIndex }: any) {
         )
     }
 
-    let roleTitle: any = null
-    if (data != null) {
-        roleTitle = String(data)
-    }
+    const roleTitle = data ? String(data) : null;
     console.log('roleTitle:', roleTitle)
     return (
         <>

@@ -22,12 +22,8 @@ export default function Roles({ orgAddress }: any) {
         )
     }
 
-    let rolesCount: any = null
-    if (data != null) {
-        rolesCount = Number(data)
-    }
+    const rolesCount = data ? Number(data) : null;
     console.log('rolesCount:', rolesCount)
-
     if (rolesCount == 0) {
         return (
             <>
