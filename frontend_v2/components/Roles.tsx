@@ -1,6 +1,7 @@
 import { useReadContract } from "wagmi";
 import { abi } from "../../smart-contracts/ignition/deployments/chain-11155420/artifacts/DaoModule#Dao.json";
 import { useIsMounted } from "../hooks/useIsMounted";
+import Role from "./Role";
 
 export default function Roles({ orgAddress }: any) {
     console.log('Roles')
@@ -21,17 +22,27 @@ export default function Roles({ orgAddress }: any) {
         )
     }
 
+    let rolesCount: any = null
+    if (data != undefined) {
+        rolesCount = Number(data)
+    }
+    console.log('rolesCount:', rolesCount)
+
+    if (rolesCount == 0) {
+        return (
+            <>
+                No roles have been added yet
+            </>
+        )
+    }
+
     return (
       <>
-        <div className="bg-white rounded-2xl p-4">
-            Role title 1
-        </div>
-        <div className="mt-4 bg-white rounded-2xl p-4">
-            Role title 2
-        </div>
-        <div className="mt-4 bg-white rounded-2xl p-4">
-            Role title 3
-        </div>
+        {[...Array(rolesCount)].map((data, index) => (
+            <div className="mt-4 bg-white rounded-2xl p-4">
+                <Role orgAddress={orgAddress} roleIndex={index} />
+            </div>
+        ))}
       </>
     )
   }
