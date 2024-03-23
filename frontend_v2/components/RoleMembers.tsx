@@ -119,20 +119,34 @@ export function OrgMembersRatedForRole({ orgAddress, roleTitle, orgMemberAddress
                 <tbody>
                     {
                         orgMemberAddressesArray.map((address, index) => {
-                            const { data, isLoading } = useReadContract({
+                            const { data: data1, isLoading: isLoading1 } = useReadContract({
                                 abi,
                                 address: orgAddress,
                                 functionName: 'ratings',
-                                args: [address, roleTitle, '0x1aB0bE0067c4C82725dDF8456fF3031c3da08329'], // member, role, rater
+                                args: [address, roleTitle, orgMemberAddresses[0]], // member, role, rater
                             })
-                            console.log('address, index, data', address, index, data);
+                            console.log('address, index, data', address, index, data1);
+
+                            const { data: data2, isLoading: isLoading2 } = useReadContract({
+                                abi,
+                                address: orgAddress,
+                                functionName: 'ratings',
+                                args: [address, roleTitle, orgMemberAddresses[1]], // member, role, rater
+                            })
+                            console.log('address, index, data', address, index, data2);
+
+                            // Convert data and data2 to integers
+                            const integerData1 = parseInt(data1 as string);
+                            const integerData2 = parseInt(data2 as string);
+
+                            // Calculate average
+                            const average = (integerData1 + integerData2) / 2;
 
                             return (
                                 <tr key={index}>
-                                    <td><code>{address}</code> --- rating: {data}</td>
+                                    <td><code>{address}</code> --- rating: {average}</td>
                                 </tr>
-                            )
-                            }
+                            )}
                         )
                     }
                 </tbody>
