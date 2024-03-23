@@ -23,8 +23,10 @@ module.exports = {
         accounts: [PRIVATE_KEY],
         chainId: 534351,
     },
-    linea_goerli: {
-
+    linea_goerli: { // deployed with remix, checked with remix, https://goerli.lineascan.build/address/0x8a128f1ff1b046ff681e560ca0cce43535be8d49
+        url: "...",
+        accounts: [PRIVATE_KEY],
+        chainId: 59140,
     },
   },
 };
