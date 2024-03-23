@@ -10,7 +10,7 @@ export default function RoleMembers({ orgAddress, roleTitle }: any) {
         address: orgAddress,
         functionName: 'getMembersCount'
     })
-    console.log('data:', data)
+    console.log('data:', data )
 
     if (!useIsMounted() || isLoading) {
         return (
@@ -33,21 +33,21 @@ export function OrgMemberAddresses({ orgAddress, roleTitle, memberCount }: any) 
 
     console.log('abi:', abi)
 
-    let contracts = [];
+    let contracts = [memberCount]
     for (let i = 0; i < memberCount; i++) {
-        contracts.push({
+        contracts[i] = {
             address: orgAddress,
             abi: abi,
             functionName: 'members',
             args: [i]
-        });
+        }
     }
     console.log('contracts:', contracts)
 
     const { data, isLoading } = useReadContracts({
         contracts: contracts
     })
-    console.log('data:', data)
+    console.log('data:', data )
 
     if (!useIsMounted() || isLoading) {
         return (
