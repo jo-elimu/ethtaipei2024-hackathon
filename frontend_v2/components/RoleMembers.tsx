@@ -108,16 +108,6 @@ export function OrgMembersRatedForRole({ orgAddress, roleTitle, orgMemberAddress
     //     )
     // }
 
-    console.log('GetAvgRate')
-
-    const { data, isLoading } = useReadContract({
-        abi,
-        address: orgAddress,
-        functionName: 'ratings',
-        args: ['0x1aB0bE0067c4C82725dDF8456fF3031c3da08329', 'swe', '0x7E5F4552091A69125d5DfCb7b8C2659029395Bdf'],
-    })
-    console.log('data:', data )
-
     return (
         <>
             <table className="table-auto">
@@ -128,11 +118,22 @@ export function OrgMembersRatedForRole({ orgAddress, roleTitle, orgMemberAddress
                 </thead>
                 <tbody>
                     {
-                        orgMemberAddressesArray.map((address, index) => (
-                            <tr key={index}>
-                                <td><code>{address}</code> {data}</td>
-                            </tr>
-                        ))
+                        orgMemberAddressesArray.map((address, index) => {
+                            const { data, isLoading } = useReadContract({
+                                abi,
+                                address: orgAddress,
+                                functionName: 'ratings',
+                                args: [address, roleTitle, '0x7E5F4552091A69125d5DfCb7b8C2659029395Bdf'], // member, role, rater
+                            })
+                            console.log('address, index, data', address, index, data);
+
+                            return (
+                                <tr key={index}>
+                                    <td><code>{address}</code> --- rating: {data}</td>
+                                </tr>
+                            )
+                            }
+                        )
                     }
                 </tbody>
             </table>
