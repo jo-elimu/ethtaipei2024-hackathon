@@ -17,6 +17,12 @@ module.exports = {
         url: "https://polygonzkevm-cardona.g.alchemy.com/v2/iGQ3hCKslg45YnwfZhP37RQXiixTz_2g", // Update with your Infura project ID
         accounts: [PRIVATE_KEY],
         chainId: 2442,
-      },
+    },
+    scroll_sepolia: {
+
+    },
+    linea_sepolia: {
+
+    },
   },
 };
