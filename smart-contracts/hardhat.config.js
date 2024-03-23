@@ -8,7 +8,7 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY || "";
 module.exports = {
   solidity: "0.8.24",
   networks: {
-    optimism_sepolia: { // deployed with hardhat, checked with remix, https://sepolia-optimism.etherscan.io/address/0x170c6a09ba96B681f2E16146459d717a3Fd81e75
+    optimism_sepolia: { // deployed with remix, checked with remix, https://sepolia-optimism.etherscan.io/address/0xBc99e3B4ef2c923150E9b2eDe9B5a1c569c83BB0
       url: "https://opt-sepolia.g.alchemy.com/v2/zEzHSmTu1FlFSvd4P_Yzb21XaZBilczk",
       accounts: [PRIVATE_KEY],
       chainId: 11155420,
