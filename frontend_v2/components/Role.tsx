@@ -23,9 +23,10 @@ export default function Role({ orgAddress, roleIndex }: any) {
     }
 
     let roleTitle: any = null
-    if (data != undefined) {
+    if (data != null) {
         roleTitle = String(data)
     }
+    console.log('roleTitle:', roleTitle)
     return (
         <>
             <h2 className="text-4xl">Role: {roleTitle}</h2>

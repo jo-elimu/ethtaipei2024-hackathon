@@ -23,7 +23,7 @@ export default function Roles({ orgAddress }: any) {
     }
 
     let rolesCount: any = null
-    if (data != undefined) {
+    if (data != null) {
         rolesCount = Number(data)
     }
     console.log('rolesCount:', rolesCount)
