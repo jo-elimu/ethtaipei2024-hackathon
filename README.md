@@ -60,8 +60,8 @@ https://radical-dao-transparency.netlify.app
 
 ### Technicality
 
-* Decentralized autonomous organization powerd by Optimism Sepolia, Scroll Sepolia, Polygon cadona, Linea goerly, Thundercore testnet.
-* rainbowKit and Wagmi
+* Decentralized permissionless organization deployed on Optimism Sepolia, Scroll Sepolia, Polygon cadona, Linea goerly, and Thundercore testnet.
+* Latest support from rainbowKit and Wagmi.
 
 ---
 
@@ -77,4 +77,4 @@ https://radical-dao-transparency.netlify.app
 
 ### Future Work
 
-* Use `ZK` technoligy to hide user's identity.
+* Use Zero Knowledge Proof to hide rater's identity while ensuring the integrity of average scores, so raters would fear no more and rate with their true thoughts.
