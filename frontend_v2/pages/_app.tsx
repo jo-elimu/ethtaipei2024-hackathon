@@ -54,7 +54,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
-        <RainbowKitProvider>
+        <RainbowKitProvider initialChain={optimismSepolia}>
           <Component {...pageProps} />
         </RainbowKitProvider>
       </QueryClientProvider>
