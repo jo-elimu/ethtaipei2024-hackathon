@@ -4,29 +4,19 @@ import type { AppProps } from 'next/app'
 import { RainbowKitProvider, getDefaultWallets, getDefaultConfig } from '@rainbow-me/rainbowkit';
 import { metaMaskWallet } from '@rainbow-me/rainbowkit/wallets';
 import {
+  scroll,
   scrollSepolia,
+  optimism,
   optimismSepolia,
+  polygonZkEvm,
   polygonZkEvmTestnet,
-  lineaTestnet,
+  sepolia,
+  linea,
+  lineaTestnet
 } from 'wagmi/chains';
-
-import { defineChain } from 'viem'
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { WagmiProvider } from 'wagmi';
-
-export const thunderTest = defineChain({
-  id: 18,
-  name: 'ThunderCore Testnet',
-  nativeCurrency: { name: 'ThunderCore Testnet Token', symbol: 'TST', decimals: 18 },
-  rpcUrls: {
-    default: { http: ['https://testnet-rpc.thundercore.com'] },
-  },
-  blockExplorers: {
-    default: { name: 'thundercore-blockscout-testnet', url: 'https://explorer-testnet.thundercore.com' },
-  },
-  contracts: {},
-})
 
 const { wallets } = getDefaultWallets();
 const config = getDefaultConfig({
@@ -40,11 +30,16 @@ const config = getDefaultConfig({
     },
   ],
   chains: [
+    sepolia,
+    scroll,
     scrollSepolia,
+    polygonZkEvm,
     polygonZkEvmTestnet,
+    optimism,
     optimismSepolia,
+    linea,
     lineaTestnet,
-    thunderTest,
+    ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true' ? [sepolia] : []),
   ],
   ssr: true,
 });
