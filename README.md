@@ -70,8 +70,13 @@ https://radical-dao-transparency.netlify.app
 
 ### Utility
 
+<<<<<<< HEAD
 * Help newcomers in a new environment to quickly adapt and enhance their interpersonal skills rating.
 * Due to the implementation of a DAO, each member has the ability to evaluate all other members, with the exception of themselves.
+=======
+* Help newcomers with little to no knowledge of the organization quickly get a grasp of colleagues' technical skill level from different aspects.
+
+>>>>>>> d776e9d (add: tech items)
 ---
 
 ### Market Readiness
