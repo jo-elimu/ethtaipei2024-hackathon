@@ -46,7 +46,8 @@
 
 ### Hackathon Day 3
 
-...
+1. Code UI
+2. Documentation
 
 ---
 
