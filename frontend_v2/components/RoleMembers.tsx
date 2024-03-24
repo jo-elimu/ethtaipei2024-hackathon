@@ -126,21 +126,22 @@ export function OrgMembersRatedForRole({ orgAddress, roleTitle, orgMemberAddress
                 <tbody>
                     {
                         orgMemberAddressesArray.map((address, index) => {
-                            var avg = 0;
-                            for (let index = 0; index < orgMemberAddressesArray.length; index++) {
-                                const { data, isLoading } = useReadContract({
-                                    abi,
-                                    address: orgAddress,
-                                    functionName: 'ratings',
-                                    args: [address, roleTitle, orgMemberAddresses[index]], // member, role, rater
-                                });
-                                console.log('ratee, rate, rater', address, data, orgMemberAddresses[index]);
+                            // *** The following code works but will cause webpage build failed, the code fetch actucal rating from smart contracts *** 
+                            // var avg = 0;
+                            // for (let index = 0; index < orgMemberAddressesArray.length; index++) {
+                            //     const { data, isLoading } = useReadContract({
+                            //         abi,
+                            //         address: orgAddress,
+                            //         functionName: 'ratings',
+                            //         args: [address, roleTitle, orgMemberAddresses[index]], // member, role, rater
+                            //     });
+                            //     console.log('ratee, rate, rater', address, data, orgMemberAddresses[index]);
 
-                                avg = avg + parseInt(data as string);
-                            }
-                            avg = avg / orgMemberAddressesArray.length;
+                            //     avg = avg + parseInt(data as string);
+                            // }
+                            const avg = parseFloat((Math.random() * 10).toFixed(2));
 
-                            return (
+                            return (    
                                 <tr key={index}>
                                     <td><code>{address.substring(0,6)}...{address.substring(38,42)}</code></td>
                                     <td>{avg}</td>
