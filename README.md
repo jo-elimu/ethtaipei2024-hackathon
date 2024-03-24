@@ -67,7 +67,7 @@ https://radical-dao-transparency.netlify.app
 
 ### Utility
 
-...
+* Help newcomers in a new environment to quickly adapt and enhance their interpersonal skills rating.
 
 ---
 
