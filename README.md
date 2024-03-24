@@ -60,7 +60,7 @@ https://radical-dao-transparency.netlify.app
 
 ### Technicality
 
-* Decentralized permissionless organization deployed on Optimism Sepolia, Scroll Sepolia, Polygon cadona, Linea goerly, and Thundercore testnet.
+* Decentralized permissionless smart contracts deployed on Optimism Sepolia, Scroll Sepolia, Polygon cadona, Linea goerly, and Thundercore testnet.
 * Latest support from rainbowKit and Wagmi.
 
 ---
