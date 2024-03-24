@@ -19,12 +19,12 @@ module.exports = {
         chainId: 2442,
     },
     scroll_sepolia: { // deployed with remix, checked with remix, https://sepolia.scrollscan.dev/address/0x43A30DB2d6962c37a702E869FbD15cFc4f86f621, testnet data added
-        url: "https://hardworking-shy-tab.scroll-testnet.quiknode.pro/e1d363c220917184ca4b298758b1a0bdbcf01f97/",
+        url: "https://hardworking-shy-tab.scroll-testnet.quiknode.pro/e1d363c220917184ca4b298758b1a0bdbcf01f97",
         accounts: [PRIVATE_KEY],
         chainId: 534351,
     },
     linea_goerli: { // deployed with remix, checked with remix, https://goerli.lineascan.build/address/0x8a128f1ff1b046ff681e560ca0cce43535be8d49, testnet data added
-        url: "...",
+        url: "https://linea-goerli.infura.io/v3/17b59a2aa6ec499aa0aec0057a10b33c",
         accounts: [PRIVATE_KEY],
         chainId: 59140,
     },
