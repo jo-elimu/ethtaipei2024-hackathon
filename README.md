@@ -77,7 +77,9 @@ https://radical-dao-transparency.netlify.app
 
 ### Market Readiness
 
-...
+* **Web3 Community Demand**: With the growing popularity of cryptocurrencies and blockchain technology, there's an increasing demand for decentralized autonomous organizations (DAOs). this tool would cater to this demand by providing a transparent rating system that operates effectively within the Web3 environment.
+* **Need for Information Transparency**: Within DAOs, members require transparent insights into each other's performance and reputation to facilitate better cooperation and decision-making. this tool fills this need by providing a platform for members to rate each other, thereby enhancing the overall efficiency of the DAO.
+* **Technical Feasibility** : The functionalities this tool propose are technically feasible, utilizing smart contracts to store and manage user ratings, and offering a user-friendly frontend application for interaction with the smart contracts. Such a framework aligns with the standards of Web3 technology and has the potential for widespread adoption.
 
 ### Future Work
 
