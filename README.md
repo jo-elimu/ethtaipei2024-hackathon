@@ -30,6 +30,8 @@
 
 ## Development Process
 
+Team project board: https://github.com/users/jo-elimu/projects/1
+
 ### Hackathon Day 1
 
 1. Idea [discussions](https://github.com/jo-elimu/ethtaipei2024-hackathon/discussions)
