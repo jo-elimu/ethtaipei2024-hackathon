@@ -61,6 +61,8 @@ https://radical-dao-transparency.netlify.app
 ### Technicality
 
 * Decentralized permissionless smart contracts deployed on Optimism Sepolia, Scroll Sepolia, Polygon cadona, Linea goerly, and Thundercore testnet.
+* Industry standard smart contract deploy and testing tools including but not limited to hardhat and remix.
+* All contracts deployed verified on block explorers across different chains.
 * Latest support from rainbowKit and Wagmi.
 
 ---
