@@ -82,3 +82,7 @@ https://radical-dao-transparency.netlify.app
 ### Future Work
 
 * Use Zero Knowledge Proof to hide rater's identity while ensuring the integrity of average scores, so raters would fear no more and rate with their true thoughts.
+* Smart contract security audit.
+* Smart contract gas usage optimization.
+* There probably exists a better data strucutre to reduce the time complexity of fetching average ratings from smart contract.
+* Stricter member opration restriction, like OAuth in web2.
