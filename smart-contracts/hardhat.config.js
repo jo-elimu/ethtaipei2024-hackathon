@@ -29,7 +29,7 @@ module.exports = {
         chainId: 59140,
     },
     thundercore_testnet: { // deployed with remix, checked with remix, https://explorer-testnet.thundercore.com/address/0x3FBfA1a0F44dB25f55c4370156227dDb2576f48E
-        url: "wss://testnet-ws.thundercore.com",
+        url: "https://mainnet-rpc.thundercore.com",
         accounts: [PRIVATE_KEY],
         chainId: 108,
     }
