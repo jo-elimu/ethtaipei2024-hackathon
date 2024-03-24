@@ -19,7 +19,7 @@ module.exports = {
         chainId: 2442,
     },
     scroll_sepolia: { // deployed with remix, checked with remix, https://sepolia.scrollscan.dev/address/0x43A30DB2d6962c37a702E869FbD15cFc4f86f621, testnet data added
-        url: "...",
+        url: "https://hardworking-shy-tab.scroll-testnet.quiknode.pro/e1d363c220917184ca4b298758b1a0bdbcf01f97/",
         accounts: [PRIVATE_KEY],
         chainId: 534351,
     },
