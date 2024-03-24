@@ -70,7 +70,7 @@ https://radical-dao-transparency.netlify.app
 ### Utility
 
 * Help newcomers in a new environment to quickly adapt and enhance their interpersonal skills rating.
-
+* Due to the implementation of a DAO, each member has the ability to evaluate all other members, with the exception of themselves.
 ---
 
 ### Market Readiness
